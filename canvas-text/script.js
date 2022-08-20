@@ -31,12 +31,12 @@ const drawOnCanvas = (letter, fillRectColor) => {
   context.fillText(letter, randomX, randomY);
 };
 
-// accepts [a-z,A-Z]
+// accepts alphanumeric letters with some special symbols
 const regex = /^[\w!@#$%^&*()+=-]$/;
 
 // welcome message
 let firstKeyPressPending = true;
-const text = 'Press any key to continue';
+const text = 'Press any key (/\w!@#$%^&*()+=-]$/) to continue';
 context.font = '40px Arial';
 context.fillText(text, 10, 10);
 

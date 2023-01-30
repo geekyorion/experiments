@@ -13,8 +13,8 @@ const getString = (str) => {
   }).join('+');
 };
 
-// char['0'] = zero;
-// char['1'] = one;
+char['0'] = zero;
+char['1'] = one;
 
 // from 'false'
 char.f = `(![]+[])[${zero}]`;
